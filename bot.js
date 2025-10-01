@@ -42,7 +42,7 @@ function startBot(BOT_TOKEN, CHANNEL_USERNAME) {
       // Inline button
       const buttons = isSubscribed
         ? Markup.inlineKeyboard([
-            Markup.button.url("Open Web App", "https://t.me/MultilevelPro_Course")
+            Markup.button.url("Open Web App", "https://procourse-client.netlify.app/")
           ])
         : Markup.inlineKeyboard([
             Markup.button.url("Bizning kanal", "https://t.me/MultilevelPro_Course")
