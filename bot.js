@@ -1,6 +1,6 @@
 const { Telegraf, Markup } = require("telegraf");
 
-export function startBot(BOT_TOKEN, CHANNEL_USERNAME) {
+function startBot(BOT_TOKEN, CHANNEL_USERNAME) {
   const bot = new Telegraf(BOT_TOKEN);
 
   bot.start(async (ctx) => {
@@ -60,3 +60,6 @@ export function startBot(BOT_TOKEN, CHANNEL_USERNAME) {
   bot.launch();
   console.log("✅ Bot started");
 }
+
+
+module.exports = startBot;
