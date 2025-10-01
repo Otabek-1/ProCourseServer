@@ -3,6 +3,7 @@ const express = require("express")
 const test = require("./tes")
 const cors = require("cors")
 const startBot = require("./bot")
+require("dotenv").config()
 
 const app = express()
 app.use(express.json())
@@ -22,4 +23,4 @@ app.post('/tests', getTests);
 
 test
 startBot("7606613240:AAHkWuf-rYcaqmU9y7tiHORNMGWCPM5yJKQ", "@MultilevelPro_Course")
-app.listen(4000, () => console.log("Server is live on port 4000"))
+app.listen(process.env.PORT || 4000, () => console.log(`Server is live on port ${process.env.PORT || 4000}`))
