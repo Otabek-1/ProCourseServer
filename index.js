@@ -22,5 +22,5 @@ app.post('/tests', getTests);
 
 
 test
-startBot("7606613240:AAHkWuf-rYcaqmU9y7tiHORNMGWCPM5yJKQ", "@MultilevelPro_Course")
+
 app.listen(process.env.PORT || 4000, () => console.log(`Server is live on port ${process.env.PORT || 4000}`))

@@ -62,4 +62,4 @@ function startBot(BOT_TOKEN, CHANNEL_USERNAME) {
 }
 
 
-module.exports = startBot;
+startBot("7606613240:AAHkWuf-rYcaqmU9y7tiHORNMGWCPM5yJKQ", "@MultilevelPro_Course")
