@@ -1,4 +1,4 @@
-import { Telegraf, Markup } from "telegraf";
+const { Telegraf, Markup } = require("telegraf");
 
 export function startBot(BOT_TOKEN, CHANNEL_USERNAME) {
   const bot = new Telegraf(BOT_TOKEN);
