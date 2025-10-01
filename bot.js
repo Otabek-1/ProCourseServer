@@ -28,12 +28,12 @@ function startBot(BOT_TOKEN, CHANNEL_USERNAME) {
 
       // Xabar matni
       let message = `Salom, ${name}! 👋\n\n`;
-      message += "Sizga ProCourse haqida ma'lumot beramiz.\n\n";
+      message += "ProCoursega xush kelibsiz!\n\n";
 
       if (!isSubscribed) {
-        message += `Iltimos, bizning kanalimizga obuna bo'ling: ${CHANNEL_USERNAME}\n`;
+        message += `To'liq funskiyalardan foydalanish uchun bizning kanalimizga obuna bo'ling: ${CHANNEL_USERNAME}\n`;
         message +=
-          "Obuna bo'lgandan so'ng, testlarni ishlash uchun Web App ga kirishingiz mumkin.";
+          "Obuna bo'lgandan so'ng, testlarni ishlash uchun Web App ga kirishingiz mumkin.\n\nObuna bo'lgach, /start ni qayta yuboring.";
       } else {
         message += "Siz kanalga obuna bo'lgansiz ✅\n";
         message += "Testlarni ishlash uchun Web App tugmasini bosing 👇";
